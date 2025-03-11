@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - United Credit Union Bank</title>
+    <link rel="stylesheet" href="bank-contact.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+   
+    <nav>
+        <div class="logo">United Credit Union Bank</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Menu -->
+        <ul id="menu">
+            <li><a href="bank.html">Home</a></li>
+            <li><a href="bank service.html">Services</a></li>
+            <li><a href="about-bank.html">About</a></li>
+            <li><a href="bank-contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’re here to help! Reach out to us for any inquiries or support.</p>
+    </header>
+
+    <!-- Contact Details Section -->
+    <section class="contact-details">
+        <h2>Get in Touch</h2>
+        <div class="contact-grid">
+            <div>
+                <h3>📍 Bank Headquarters</h3>
+                <p> 123 Finance Street, California, USA</p>
+            </div>
+            <div>
+                <h3>☎️ Phone</h3>
+                <p>Customer Service: +234 916 260 3735</p>
+                <p>Corporate Office: +234 800 987 6543</p>
+            </div>
+            <div>
+                <h3>📧 Email</h3>
+                <p>Support: <a href="mailto:support@unitedcreditbank.com">support@unitedcreditbank.com</a></p>
+                <p>General Inquiries: <a href="mailto:info@unitedcreditbank.com">info@unitedcreditbank.com</a></p>
+            </div>
+            <div>
+                <h3>🕒 Business Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday & Public Holidays: Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="account-opening">Account Opening Inquiry</option>
+                <option value="loan-status">Loan Application Status</option>
+                <option value="technical-support">Technical Support Issue</option>
+                <option value="fraud-report">Fraud or Unauthorized Transaction</option>
+                <option value="service-feedback">Feedback on Services</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="map">
+        <h2>Find Us on the Map</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.145803098395!2d3.4198490000000003!3d6.429349999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1619370975347!5m2!1sen!2sng"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social">
+        <h2>Connect With Us</h2>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 United Credit Union Bank. All rights reserved.</p>
+    </footer>
+<script>function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}</script>
+</body>
+</html>

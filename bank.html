@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeBank - Online Banking</title>
+    <link rel="stylesheet" href="bank.css">
+    <script src="https://kit.fontawesome.com/26655de846.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+       
+        <nav>
+             <img src="https://media.istockphoto.com/id/849792602/vector/flat-icon-of-bank-building-vector-illustration.jpg?s=612x612&w=0&k=20&c=eNc7_grAKtPUloKF_N5lpPPL3_ejQF-tkfqUjuT9fos=" alt="SafeBank Logo">
+            <h1>United Credit Union</h1>
+            <div class="navbar">
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Menu -->
+                <ul id="menu">
+                    <li><a href="bank.html">Home</a></li>
+                    <li><a href="bank service.html">Services</a></li>
+                    <li><a href="about-bank.html">About</a></li>
+                    <li><a href="bank-contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div class="landing">
+        <div class="imge">
+         <!--    <img src="bank.jpg" alt="" width="100%"> -->
+        </div>
+        <h1>Banking Made Easy</h1>
+        <p><marquee behavior="move" direction="left">Join United Credit Union today and experience secure, reliable, and fast online banking services. Manage your finances effortlessly with innovative features designed just for you.</marquee></p>
+        <div class="buttons">
+            <form action="login.html" method="get">
+               <a href="login.html">Login</a>
+            </form>
+            <form action="signup.html" method="get">
+                <a href="sign up.html">Sign Up</a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SafeBank. All Rights Reserved. ~ Privacy Policy ~ Terms of Service</p>
+        <ul>
+            <li><a href="https://facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+    </footer>
+    <script>function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }</script>
+</body>
+</html>

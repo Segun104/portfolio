@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+    gap: 20px;
+}
+
+
+   
+
+
+/* Hero Section */
+/* .hero {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+} */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+  
+   
+}
+
+header img {
+    height: 70px;
+    
+}
+h1 {
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    background: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+   
+
+/* Hamburger Menu (Hidden by Default) */
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* About Section */
+.about {
+   
+    background: white;
+    text-align: center; background-image: url("https://media.istockphoto.com/id/1149958175/photo/modern-skyscrapers-in-midtown-manhattan.jpg?s=2048x2048&w=is&k=20&c=p9evCCqIL6VVQBZGaiEepV3tlljQFpdGcZlX4VWnfF0=");
+    background-size: cover;
+    padding: 40px;
+
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #001830;
+}
+.about p {
+    font-size: medium;
+    color:aliceblue ;
+}
+.about-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    
+    
+}
+
+.border1 {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 350px;
+    height: 200px;
+    
+    
+    
+}
+
+
+.about-grid div {
+    text-align: left;
+    max-width: 500px;
+}
+
+.about-grid h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    color: #004080;
+    text-align: center;
+}
+
+.about-grid p {
+    text-align: center;
+}
+
+.about, .history, .why-choose, .testimonials, .cta {
+    padding: 40px;
+    background: white;
+    text-align: center;
+}
+
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.features div {
+    width: 30%;
+    text-align: center;
+}
+
+.features img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Testimonials */
+.testimonial-box {
+    background: #f0f0f0;
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Call to Action */
+.cta {
+    background:#ddd;
+    color:#004080;
+    padding: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+@media screen {
+    .about-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #004080;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}

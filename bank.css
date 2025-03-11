@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+ 
+  
+   
+}
+
+header img {
+    height: 70px;
+    
+}
+h1 {
+    text-align: center;
+}
+/* Navigation Menu */
+nav {
+    background: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+   
+
+/* Hamburger Menu (Hidden by Default) */
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.landing h1 {
+    font-size: 3rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* .landing img {
+    
+   /*  width: 100%;
+     max-width: 600px; 
+    border-radius: 10px;
+    margin: 30px 0; */
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.buttons form {
+    margin: 0;
+}
+
+.buttons a {
+    padding: 12px 25px;
+    color: white;
+    background-color: #004080;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    background-color: #00264d;
+}
+p {
+    text-align: center;
+    text-decoration: none;
+    font-weight: lighter;
+    
+}
+p a {
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 100%; 
+    
+    flex-shrink: 1;
+}
+
+.image-container, .form-container {
+    width: 100%; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: #f4f4f4; 
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+  
+   form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+   form input, footer form textarea, footer form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .fa-brands {
+    font-size:xx-large ;
+    justify-content: center;
+    color: #fff;
+
+  }
+  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    white-space: 200px;
+    justify-content: center;
+  }
+  ul {
+    gap: 2pc;
+  }
+  li:hover {
+    padding: 10px;
+    color: #004080;
+    background-color: #333;
+  }
+ 
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+button {
+    padding: 12px 25px;
+    color: white;
+    background-color: #004080;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 40%;
+}
+button:hover {
+    background-color:cadetblue;
+}
+
+
+button .buttons {
+    font-size: xx-large;
+}
+/* 
+@media (max-width: 768px) {
+    header img {
+        height: 40px;
+    }
+
+    .landing h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing p {
+        font-size: 1rem;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .buttons button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        height: 35px;
+    }
+
+    .landing h1 {
+        font-size: 2rem;
+    }
+
+    .landing p {
+        font-size: 0.9rem;
+    }
+
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+} */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #004080;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
